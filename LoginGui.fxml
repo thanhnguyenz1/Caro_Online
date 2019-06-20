@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+      prefWidth="350.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.tgbao2004.caro.account.LoginGui">
+    <children>
+        <JFXPasswordField id="passWord" fx:id="password" layoutX="77.0" layoutY="177.0" prefHeight="19.0"
+                          prefWidth="197.0" promptText="Password">
+            <font>
+                <Font name="Candara Bold" size="24.0"/>
+            </font>
+        </JFXPasswordField>
+        <JFXTextField fx:id="username" layoutX="77.0" layoutY="78.0" prefHeight="37.0" prefWidth="197.0"
+                      promptText="Username">
+            <font>
+                <Font name="Candara Bold" size="24.0"/>
+            </font>
+        </JFXTextField>
+        <JFXButton fx:id="loginButton" layoutX="47.0" layoutY="292.0" onMouseClicked="#loginClicked" prefHeight="57.0"
+                   prefWidth="119.0" style="-fx-background-color: #48ceb1;" text="Login" textAlignment="CENTER">
+            <font>
+                <Font name="Comic Sans MS Bold" size="20.0"/>
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="signUpButton" layoutX="186.0" layoutY="292.0" onMouseClicked="#signUpButtonClicked"
+                   prefHeight="57.0" prefWidth="119.0" style="-fx-background-color: #48ceb1;" text="Sign Up">
+            <font>
+                <Font name="Comic Sans MS Bold" size="20.0"/>
+            </font>
+        </JFXButton>
+    </children>
+</Pane>
